@@ -1,18 +1,16 @@
-package com.bulgat.model.enums;
+package com.bulgat.codesandbox.sdk.model.enums;
 
+import com.bulgat.codesandbox.sdk.constant.CmdExecuteStatusConstant;
 import lombok.Getter;
-
-import static com.bulgat.constant.CmdExecuteStatusConstant.FAILED;
-import static com.bulgat.constant.CmdExecuteStatusConstant.SUCCESS;
 
 
 @Getter
 public enum ExecuteCodeStatusEnum {
-    EXECUTE_TIME_OUT(FAILED,4,"Execute Time Out"),
-    SYSTEM_ERROR(FAILED,3,"System Error"),
-    EXECUTE_ERROR(FAILED,1,"Execute Error"),
-    EXECUTE_OUTPUT_EXCEEDED(FAILED,2,"Execute Output Exceeded"),
-    EXECUTE_SUCCESS(SUCCESS,0,"Execute Success");
+    EXECUTE_TIME_OUT(CmdExecuteStatusConstant.FAILED,4,"Execute Time Out"),
+    SYSTEM_ERROR(CmdExecuteStatusConstant.FAILED,3,"System Error"),
+    EXECUTE_ERROR(CmdExecuteStatusConstant.FAILED,1,"Execute Error"),
+    EXECUTE_OUTPUT_EXCEEDED(CmdExecuteStatusConstant.FAILED,2,"Execute Output Exceeded"),
+    EXECUTE_SUCCESS(CmdExecuteStatusConstant.SUCCESS,0,"Execute Success");
     private final int success;
     private final int code;
     private final String message;

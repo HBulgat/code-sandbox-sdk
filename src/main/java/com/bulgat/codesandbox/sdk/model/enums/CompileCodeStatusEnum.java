@@ -1,17 +1,15 @@
-package com.bulgat.model.enums;
+package com.bulgat.codesandbox.sdk.model.enums;
 
+import com.bulgat.codesandbox.sdk.constant.CmdExecuteStatusConstant;
 import lombok.Getter;
-
-import static com.bulgat.constant.CmdExecuteStatusConstant.FAILED;
-import static com.bulgat.constant.CmdExecuteStatusConstant.SUCCESS;
 
 @Getter
 public enum CompileCodeStatusEnum {
-    COMPILE_NO_NEEDED(SUCCESS,4,"Compile No Needed"),
-    SYSTEM_ERROR(FAILED,3,"System Error"),
-    COMPILE_TIME_OUT(FAILED,2,"Compile Time Out"),
-    COMPILE_ERROR(FAILED,1,"Compile Error"),
-    COMPILE_SUCCESS(SUCCESS,0,"Compile Success");
+    COMPILE_NO_NEEDED(CmdExecuteStatusConstant.SUCCESS,4,"Compile No Needed"),
+    SYSTEM_ERROR(CmdExecuteStatusConstant.FAILED,3,"System Error"),
+    COMPILE_TIME_OUT(CmdExecuteStatusConstant.FAILED,2,"Compile Time Out"),
+    COMPILE_ERROR(CmdExecuteStatusConstant.FAILED,1,"Compile Error"),
+    COMPILE_SUCCESS(CmdExecuteStatusConstant.SUCCESS,0,"Compile Success");
     /**
      * 1 成功，0 失败
      */

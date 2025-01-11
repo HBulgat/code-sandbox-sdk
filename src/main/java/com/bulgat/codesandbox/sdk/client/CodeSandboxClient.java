@@ -1,13 +1,13 @@
-package com.bulgat.client;
+package com.bulgat.codesandbox.sdk.client;
 
 import cn.hutool.core.util.RandomUtil;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
 import cn.hutool.json.JSONUtil;
-import com.bulgat.constant.CodeSandboxConstant;
-import com.bulgat.model.ExecuteCodeRequest;
-import com.bulgat.model.ExecuteCodeResponse;
-import com.bulgat.utils.SignUtils;
+import com.bulgat.codesandbox.sdk.model.ExecuteCodeResponse;
+import com.bulgat.codesandbox.sdk.utils.SignUtils;
+import com.bulgat.codesandbox.sdk.constant.CodeSandboxConstant;
+import com.bulgat.codesandbox.sdk.model.ExecuteCodeRequest;
 import lombok.AllArgsConstructor;
 
 import java.util.HashMap;

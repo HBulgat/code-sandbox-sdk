@@ -1,4 +1,4 @@
-package com.bulgat.model;
+package com.bulgat.codesandbox.sdk.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
