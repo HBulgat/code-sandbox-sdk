@@ -25,21 +25,20 @@ public class CodeSandboxClient {
         HttpRequest httpRequest=buildHttpRequest(executeCodeRequest);
         HttpResponse httpResponse = httpRequest.execute();
         if(!httpResponse.isOk()){
-            throw new RuntimeException("http调用异常");
+            throw new RuntimeException("Http error");
         }
         String responseStr = httpResponse.body();
         Map responseBody = JSONUtil.toBean(responseStr, Map.class);
-        System.out.println(responseBody);
         String dataStr=null;
         Integer code=null;
         try {
             dataStr= (String) responseBody.get("data");
             code=(Integer) responseBody.get("code");
         }catch (Exception e){
-            throw new RuntimeException("代码沙箱调用异常");
+            throw new RuntimeException("Codesandbox invoke error");
         }
         if (code==null||code.intValue()!=0){
-            throw new RuntimeException("代码沙箱调用异常,response code="+code);
+            throw new RuntimeException("Codesandbox invoke error,response code="+code);
         }
         ExecuteCodeResponse executeCodeResponse=JSONUtil.toBean(dataStr, ExecuteCodeResponse.class);
         return executeCodeResponse;
