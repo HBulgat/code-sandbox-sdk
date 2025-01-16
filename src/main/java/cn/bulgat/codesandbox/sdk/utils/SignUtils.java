@@ -1,4 +1,4 @@
-package com.bulgat.codesandbox.sdk.utils;
+package cn.bulgat.codesandbox.sdk.utils;
 
 import cn.hutool.crypto.digest.DigestAlgorithm;
 import cn.hutool.crypto.digest.Digester;

@@ -1,6 +1,6 @@
-package com.bulgat.codesandbox.sdk.model;
+package cn.bulgat.codesandbox.sdk.model;
 
-import com.bulgat.codesandbox.sdk.model.enums.CompileCodeStatusEnum;
+import cn.bulgat.codesandbox.sdk.model.enums.CompileCodeStatusEnum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

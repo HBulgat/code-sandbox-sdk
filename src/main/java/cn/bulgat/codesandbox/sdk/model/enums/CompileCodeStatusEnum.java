@@ -1,6 +1,6 @@
-package com.bulgat.codesandbox.sdk.model.enums;
+package cn.bulgat.codesandbox.sdk.model.enums;
 
-import com.bulgat.codesandbox.sdk.constant.CmdExecuteStatusConstant;
+import cn.bulgat.codesandbox.sdk.constant.CmdExecuteStatusConstant;
 import lombok.Getter;
 
 @Getter

@@ -1,4 +1,4 @@
-package com.bulgat.codesandbox.sdk.constant;
+package cn.bulgat.codesandbox.sdk.constant;
 
 public interface CodeSandboxConstant {
     String DEFAULT_REMOTE_SERVER_URL="http://localhost:8077/api/execute_code/execute_code";

@@ -1,4 +1,4 @@
-package com.bulgat;
+package cn.bulgat;
 
 public class ApiTest {
 
