@@ -2,6 +2,7 @@ package cn.bulgat;
 
 import cn.bulgat.codesandbox.sdk.client.CodeSandboxClient;
 import cn.bulgat.codesandbox.sdk.model.dto.ExecuteCodeRequest;
+import cn.bulgat.codesandbox.sdk.model.dto.InputList;
 import cn.bulgat.codesandbox.sdk.model.vo.ExecuteCodeResponse;
 import org.junit.Test;
 
@@ -69,7 +70,7 @@ static String code="import java.util.HashMap;\n" +
         CodeSandboxClient client=new CodeSandboxClient("test-sdk-I6Sf3emoALlhPAx","yIQIufR42Ys1hNC8Hja9HOSrqPkAGLnO00F",
                 "http://localhost:8077/api/execute/execute");
         ExecuteCodeRequest executeCodeRequest=new ExecuteCodeRequest();
-        List<Object> inputList=new ArrayList<>();
+        InputList inputList=new InputList();
         inputList.add("2 6\n" +
                 "3 3");
         inputList.add(new File("/home/bulgat/IdeaProjects/code-sandbox-sdk/docs/1.txt"));

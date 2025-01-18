@@ -17,7 +17,7 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 public class ExecuteCodeRequest implements Serializable {
-    private List<Object> inputList;
+    private InputList inputList;
     private String code;
     private String language;
 }
