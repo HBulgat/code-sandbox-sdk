@@ -8,12 +8,14 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 import java.util.List;
 
-@Deprecated
+/**
+ * 给http请求的
+ */
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
-public class ExecuteCodeRequestByFileOrText implements Serializable {
+public class ExecuteCodeRequestDTO implements Serializable {
     private List<Input> inputList;
     private String code;
     private String language;

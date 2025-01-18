@@ -1,4 +1,4 @@
-package cn.bulgat.codesandbox.sdk.model;
+package cn.bulgat.codesandbox.sdk.model.vo;
 
 import cn.bulgat.codesandbox.sdk.model.enums.CompileCodeStatusEnum;
 import lombok.AllArgsConstructor;

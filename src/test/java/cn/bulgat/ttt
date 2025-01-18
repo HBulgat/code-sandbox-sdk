@@ -32,7 +32,7 @@ public class ApacheHttpClientExample {
             builder.addBinaryBody("files", new File(filePath2), ContentType.DEFAULT_BINARY, "file2.txt");
             // 添加 ExecuteCodeRequest 部分，将其作为 JSON 数据发送
             String executeCodeRequestJson = "{\"code\":\"your_code\",\"language\":\"java\",\"inputList\":null}";
-            builder.addTextBody("executeCodeRequest", executeCodeRequestJson, ContentType.APPLICATION_JSON);
+            builder.addTextBody("executeCodeRequestDTO", executeCodeRequestJson, ContentType.APPLICATION_JSON);
             // 构建请求实体
             HttpEntity entity = builder.build();
             // 将请求实体设置到 HttpPost 请求中
