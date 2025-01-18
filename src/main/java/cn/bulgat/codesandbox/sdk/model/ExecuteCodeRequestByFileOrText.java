@@ -9,11 +9,11 @@ import java.io.Serializable;
 import java.util.List;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
-public class ExecuteCodeRequest implements Serializable {
-    private List<String> inputList;
+public class ExecuteCodeRequestByFileOrText implements Serializable {
+    private List<Input> inputList;
     private String code;
     private String language;
 }

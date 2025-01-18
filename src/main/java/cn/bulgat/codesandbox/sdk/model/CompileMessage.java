@@ -5,10 +5,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CompileMessage {
+public class CompileMessage implements Serializable {
     /**
      * 编译状态：编译错误、编译正确
      */

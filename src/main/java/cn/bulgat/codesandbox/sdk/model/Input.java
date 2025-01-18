@@ -5,15 +5,14 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.File;
 import java.io.Serializable;
-import java.util.List;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-@Builder
-public class ExecuteCodeRequest implements Serializable {
-    private List<String> inputList;
-    private String code;
-    private String language;
+@NoArgsConstructor
+public class Input implements Serializable {
+    private String type;
+    private String inputText;
+    private String inputFileName;
 }

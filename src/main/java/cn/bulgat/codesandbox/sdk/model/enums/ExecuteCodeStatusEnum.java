@@ -3,9 +3,11 @@ package cn.bulgat.codesandbox.sdk.model.enums;
 import cn.bulgat.codesandbox.sdk.constant.CmdExecuteStatusConstant;
 import lombok.Getter;
 
+import java.io.Serializable;
+
 
 @Getter
-public enum ExecuteCodeStatusEnum {
+public enum ExecuteCodeStatusEnum implements Serializable {
     EXECUTE_TIME_OUT(CmdExecuteStatusConstant.FAILED,4,"Execute Time Out"),
     SYSTEM_ERROR(CmdExecuteStatusConstant.FAILED,3,"System Error"),
     EXECUTE_ERROR(CmdExecuteStatusConstant.FAILED,1,"Execute Error"),

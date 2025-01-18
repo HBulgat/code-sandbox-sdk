@@ -3,8 +3,10 @@ package cn.bulgat.codesandbox.sdk.model.enums;
 import cn.bulgat.codesandbox.sdk.constant.CmdExecuteStatusConstant;
 import lombok.Getter;
 
+import java.io.Serializable;
+
 @Getter
-public enum CompileCodeStatusEnum {
+public enum CompileCodeStatusEnum implements Serializable {
     COMPILE_NO_NEEDED(CmdExecuteStatusConstant.SUCCESS,4,"Compile No Needed"),
     SYSTEM_ERROR(CmdExecuteStatusConstant.FAILED,3,"System Error"),
     COMPILE_TIME_OUT(CmdExecuteStatusConstant.FAILED,2,"Compile Time Out"),
