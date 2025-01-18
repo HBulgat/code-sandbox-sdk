@@ -46,7 +46,6 @@ public class CodeSandboxClient {
     }
     public ExecuteCodeResponse executeCode(ExecuteCodeRequest executeCodeRequest) throws IOException {
         ExecuteCodeRequestDTO executeCodeRequestDTO=buildRequestParams(executeCodeRequest);
-        System.out.println(executeCodeRequestDTO);
         List<Object> inputObjList = executeCodeRequest.getInputList();
         List<File> fileList=getFileList(inputObjList);
         MultipartBody.Builder multipartBodyBuilder = new MultipartBody.Builder()
